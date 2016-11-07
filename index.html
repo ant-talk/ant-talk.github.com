@@ -7,15 +7,24 @@
     <style>
       /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
+      #header {
+        padding: 20px;
+        margin-bottom: 20px;
+      }
       #map {
-        height: 100%;
+        width: 80%;
+        float: left;
       }
-      /* Optional: Makes the sample page fill the window. */
-      html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
+      #chat { 
+        width: 20%;
+        float: right;
       }
+      #footer {
+        clear: both;
+        padding: 20px;
+        border: 1px solid #bcbcbc;
+      }
+      
     </style>
   </head>
   <body>
@@ -24,6 +33,7 @@
       <div id="map"></div>
       <div id="chat"><p>test</p></div>
     </div>
+    <div id="footer"><p>footer</p></div>
     <script>
       // Note: This example requires that you consent to location sharing when
       // prompted by your browser. If you see the error "The Geolocation service
